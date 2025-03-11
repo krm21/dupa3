@@ -1,0 +1,17 @@
+name: Reusable Hello World
+
+on:
+  workflow_call:
+    inputs:
+      name:
+        description: 'Name to greet'
+        required: false
+        default: 'World'
+        type: string
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello World
+        run: echo "Hello, ${{ inputs.name }}!"
