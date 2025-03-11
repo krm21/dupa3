@@ -1,0 +1,7 @@
+on: [push]
+jobs:
+  check-event:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show event JSON
+        run: cat $GITHUB_EVENT_PATH
