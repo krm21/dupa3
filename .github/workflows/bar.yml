@@ -21,9 +21,3 @@ jobs:
     steps:
       - name: Print Hello World
         run: echo "Hello, ${{ inputs.name }}!!"
-  say-hello3:
-    needs: say-hello2
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print Hello World
-        run: echo "Hello, ${{ inputs.name }}!!!"
