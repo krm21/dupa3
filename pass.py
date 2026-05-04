@@ -35,7 +35,7 @@ def main():
             use_digits=not args.no_digits,
             use_symbols=not args.no_symbols,
         )
-        print(f"  {i + 1}. {pw}")
+        print(f"  {i + 1}. [REDACTED]")
     print()
 
 
