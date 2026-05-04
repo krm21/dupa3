@@ -1,0 +1,12 @@
+name: CodeQL
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  schedule:
+    - cron: '59 16 * * 1'
+
+jobs:
+  analyze:
+    uses: github/codeql-action/analyze@v3
